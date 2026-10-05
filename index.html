@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zubair Nabeel — Senior Graphic Designer portfolio. Brand identity, packaging, OOH media, social media, YouTube thumbnails and website banners.">
+  <title>Zubair Nabeel | Senior Graphic Designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="#home">ZN<span>.</span></a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">SENIOR GRAPHIC DESIGNER</p>
+          <h1>Design that makes<br><span>brands stand out.</span></h1>
+          <p class="hero-text">
+            Creative visual designer with 10+ years of experience creating
+            impactful brand identities, digital content, packaging and advertising visuals.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#work">View My Work</a>
+            <a class="btn btn-secondary" href="mailto:zubairnabeel1991@gmail.com">Let's Talk</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <div class="monogram">ZN</div>
+            <p>CREATIVE<br>VISUALS</p>
+            <div class="line"></div>
+            <small>Brand • Digital • Print</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">ABOUT ME</p>
+          <h2>Experienced designer.<br><span>Creative problem solver.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I’m Zubair Nabeel, a Senior Graphic Designer focused on turning ideas
+            into clear, memorable and professional visual experiences.
+          </p>
+          <p>
+            My work covers branding, advertising, packaging and digital design,
+            with a strong focus on visual consistency and communication.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section work-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>What I <span>design.</span></h2>
+          </div>
+          <p class="section-note">Replace the placeholders below with your actual portfolio images.</p>
+        </div>
+
+        <div class="work-grid">
+          <article class="project project-large">
+            <div class="project-image image-1"><span>01</span></div>
+            <div class="project-info"><h3>Brand Identity</h3><p>Logo systems • Brand guidelines • Visual identity</p></div>
+          </article>
+          <article class="project">
+            <div class="project-image image-2"><span>02</span></div>
+            <div class="project-info"><h3>Product Packaging</h3><p>Packaging • Labels • Product visuals</p></div>
+          </article>
+          <article class="project">
+            <div class="project-image image-3"><span>03</span></div>
+            <div class="project-info"><h3>OOH Media</h3><p>Billboards • Outdoor campaigns • Large format</p></div>
+          </article>
+          <article class="project project-large">
+            <div class="project-image image-4"><span>04</span></div>
+            <div class="project-info"><h3>Social Media Post</h3><p>Campaign creatives • Promotional content • Digital ads</p></div>
+          </article>
+          <article class="project">
+            <div class="project-image image-5"><span>05</span></div>
+            <div class="project-info"><h3>YouTube Thumbnail</h3><p>Attention-grabbing thumbnails • Video graphics</p></div>
+          </article>
+          <article class="project">
+            <div class="project-image image-6"><span>06</span></div>
+            <div class="project-info"><h3>Website Banner</h3><p>Web banners • Digital campaigns • Display graphics</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <p class="eyebrow">TOOLS & EXPERTISE</p>
+        <h2>My creative <span>toolkit.</span></h2>
+        <div class="skills-grid">
+          <div class="skill"><strong>01</strong><h3>Adobe Illustrator</h3><p>Vector design, logos, branding and print artwork.</p></div>
+          <div class="skill"><strong>02</strong><h3>Adobe Photoshop</h3><p>Photo manipulation, compositing, digital artwork and campaigns.</p></div>
+          <div class="skill"><strong>03</strong><h3>Adobe Premiere Pro</h3><p>Video editing, motion-based content and social video creatives.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">LET'S WORK TOGETHER</p>
+          <h2>Have a project<br><span>in mind?</span></h2>
+        </div>
+        <div>
+          <p class="contact-text">I’m available for graphic design opportunities, freelance projects and remote work.</p>
+          <a class="email" href="mailto:zubairnabeel1991@gmail.com">zubairnabeel1991@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Zubair Nabeel. All rights reserved.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+  </script>
+</body>
+</html>
