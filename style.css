@@ -12,8 +12,8 @@
 }
 
 .logo img {
-    height: 16px;
-    width: 10px;
+    height: auto;
+    width: auto;
     display: block;
 }
 
