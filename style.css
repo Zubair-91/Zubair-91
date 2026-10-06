@@ -134,6 +134,7 @@ footer { padding: 25px 0; }
   .footer-inner { flex-direction: column; gap: 10px; }
 }
 
+
 .hero-buttons {
     position: relative;
     top: 50px;
