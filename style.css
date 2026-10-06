@@ -133,3 +133,8 @@ footer { padding: 25px 0; }
   .project-large { grid-column: auto; }
   .footer-inner { flex-direction: column; gap: 10px; }
 }
+
+hero-buttons {
+    position: relative;
+    top: 30px;
+}
