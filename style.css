@@ -127,7 +127,6 @@ footer { padding: 25px 0; }
   .footer-inner { flex-direction: column; gap: 10px; }
 }
 
-
 .logo img {
     height: 100px;
     width: auto;
