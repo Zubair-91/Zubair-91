@@ -126,6 +126,9 @@ footer { padding: 25px 0; }
   .project-large { grid-column: auto; }
   .footer-inner { flex-direction: column; gap: 10px; }
 }
+
+
+
 </> CSS
 .logo img {
     height: 32px;
