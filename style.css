@@ -19,7 +19,7 @@
 }
 
 .hero-image {
-    transform: translateY(20px); /* down */
+    transform: translateY(40px); /* down */
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
