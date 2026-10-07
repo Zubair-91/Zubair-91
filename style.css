@@ -11,13 +11,11 @@
   --max: 1180px;
 }
 
-.logo {
-    width: auto;
-    height: 30px;
-    object-fit: contain;
-    flex-shrink: 0;
+.logo img {
+    height: 60px;
+    width: 100%;
     display: block;
-    margin-left: 10px;
+    margin-left: -40px;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
