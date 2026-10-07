@@ -100,7 +100,7 @@ h2 { font-size: clamp(40px, 5vw, 64px); }
   content: ""; position: absolute; width: 130px; height: 130px;
   border: 1px solid rgba(255,255,255,.18); transform: rotate(45deg); bottom: -65px; left: 15%;
 }
-
+.image-1 { background: linear-gradient(135deg, #272727, #101010); }
 .image-2 { background: linear-gradient(135deg, #171717, #343434); }
 .image-3 { background: linear-gradient(135deg, #303030, #111); }
 .image-4 { background: linear-gradient(135deg, #111, #292929); }
@@ -207,4 +207,5 @@ html, body {
     background-image: url('images/Cover Image.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
