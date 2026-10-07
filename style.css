@@ -202,3 +202,9 @@ html, body {
         padding: 30px 15px;
     }
 }
+
+.image-1 {
+    background-image: url('images/Cover Image.png');
+    background-size: cover;
+    background-position: center;
+}
