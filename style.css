@@ -13,7 +13,7 @@
 
 .logo img {
     height: 60px;
-    width: 100%;
+    width: auto;
     display: block;
     margin-left: -40px;
 }
