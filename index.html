@@ -137,25 +137,6 @@ function closeBrandGallery() {
     </div>
 
 </article>
-                    <div id="ProductGallery" class="gallery-overlay">
-
-    <div class="gallery-content">
-
-        <button class="gallery-close" onclick="closeProductGallery()">×</button>
-
-        <h2>Product Packaging</h2>
-
-        <div class="Product-gallery">
-
-            <img src="images/Packaging-01.jpg" alt="Product Packaging 1">
-            <img src="images/Packaging-02.jpg" alt="Product Packaging 2">
-            <img src="images/Packaging-03.jpg" alt="Product Packaging 3">
-
-        </div>
-
-    </div>
-
-</div>
           
           <article class="project">
             <div class="project-image image-3"><span>03</span></div>
@@ -218,13 +199,13 @@ function closeBrandGallery() {
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
     function openProductGallery() {
-    document.getElementById("ProductGallery").style.display = "block";
-    document.body.style.overflow = "hidden";
-}
+    const images = [
+        "images/Packaging-01.jpg",
+        "images/Packaging-02.jpg",
+        "images/Packaging-03.jpg"
+    ];
 
-function closeProductGallery() {
-    document.getElementById("ProductGallery").style.display = "none";
-    document.body.style.overflow = "auto";
+    openGallery(images);
 }
   </script>
 </body>
