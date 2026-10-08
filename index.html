@@ -197,6 +197,15 @@ function closeBrandGallery() {
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
+    function openPackagingGallery() {
+    const images = [
+        "images/Packaging-01.jpg",
+        "images/Packaging-02.jpg",
+        "images/Packaging-03.jpg"
+    ];
+
+    openGallery(images);
+}
   </script>
 </body>
 </html>
