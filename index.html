@@ -217,6 +217,15 @@ function closeBrandGallery() {
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
+    function openProductGallery() {
+    document.getElementById("ProductGallery").style.display = "block";
+    document.body.style.overflow = "hidden";
+}
+
+function closeProductGallery() {
+    document.getElementById("ProductGallery").style.display = "none";
+    document.body.style.overflow = "auto";
+}
   </script>
 </body>
 </html>
