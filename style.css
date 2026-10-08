@@ -98,12 +98,6 @@ h2 { font-size: clamp(40px, 5vw, 64px); }
     align-items: end;
     padding: 20px;
 }
-.project-image img {
-    width: auto;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
 .project-image::before {
   content: ""; position: absolute; width: 230px; height: 230px; border-radius: 50%;
   border: 1px solid rgba(216,255,62,.35); top: -80px; right: -50px;
