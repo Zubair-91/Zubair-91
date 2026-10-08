@@ -125,10 +125,28 @@ function closeBrandGallery() {
     </div>
 
 </div>
-          <article class="project">
-            <div class="project-image image-2"><span>02</span></div>
-            <div class="project-info"><h3>Product Packaging</h3><p>Packaging • Labels</p></div>
-          </article>
+          <article class="project" onclick="openPackagingGallery()">
+
+    <div class="project-image image-2">
+        <span class="project-number">02</span>
+        <h3 class="project-title">PRODUCT PACKAGING</h3>
+    </div>
+
+    <div class="project-info">
+        <h3>Product Packaging</h3>
+        <p>Creative Packaging Design</p>
+    </div>
+
+</article>
+          function openPackagingGallery() {
+    const images = [
+        "images/Packaging-01.jpg",
+        "images/Packaging-02.jpg",
+        "images/Packaging-03.jpg"
+    ];
+
+    openGallery(images);
+}
           <article class="project">
             <div class="project-image image-3"><span>03</span></div>
             <div class="project-info"><h3>OOH Media</h3><p>Billboards • Outdoor campaigns</p></div>
