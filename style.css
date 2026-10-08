@@ -209,7 +209,22 @@ html, body {
     }
 
 .image-1 {
-    background-image: url('images/Cover Image.jpg');
+    /* Brand Identity cover image */
+    background-image: url('images/Cover%20Image.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: #191919;
+}
+
+/* Keep the decorative shapes visible without hiding the cover image */
+.project-image::before,
+.project-image::after {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.project-image span {
+    position: relative;
+    z-index: 2;
 }
