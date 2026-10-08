@@ -128,7 +128,7 @@ function closeBrandGallery() {
           <article class="project" onclick="openPackagingGallery()">
 
     <div class="project-image image-2">
-        <span class="project-number">02</span>
+        <span>02</span>
     </div>
 
     <div class="project-info">
@@ -137,6 +137,26 @@ function closeBrandGallery() {
     </div>
 
 </article>
+                    <div id="PackagingGallery" class="gallery-overlay">
+
+    <div class="gallery-content">
+
+        <button class="gallery-close" onclick="closePackagingGallery()">×</button>
+
+        <h2>Product Packaging</h2>
+
+        <div class="Packaging-gallery">
+
+            <img src="images/Packaging-01.jpg" alt="Product Packaging 1">
+            <img src="images/Packaging-02.jpg" alt="Product Packaging 2">
+            <img src="images/Packaging-03.jpg" alt="Product Packaging 3">
+
+        </div>
+
+    </div>
+
+</div>
+          
           <article class="project">
             <div class="project-image image-3"><span>03</span></div>
             <div class="project-info"><h3>OOH Media</h3><p>Billboards • Outdoor campaigns</p></div>
@@ -197,15 +217,7 @@ function closeBrandGallery() {
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
-    function openPackagingGallery() {
-    const images = [
-        "images/Packaging-01.jpg",
-        "images/Packaging-02.jpg",
-        "images/Packaging-03.jpg"
-    ];
 
-    openGallery(images);
-}
   </script>
 </body>
 </html>
