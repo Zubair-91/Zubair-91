@@ -193,33 +193,3 @@ html, body {
     height: auto;
     display: block;
 }
-
-@media (max-width: 768px) {
-    .brand-gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-overlay {
-        padding: 30px 15px;
-    }
-
-.image-1 {
-    /* Brand Identity cover image */
-    background-image: url('images/Cover%20Image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #191919;
-}
-
-/* Keep the decorative shapes visible without hiding the cover image */
-.project-image::before,
-.project-image::after {
-    pointer-events: none;
-    z-index: 1;
-}
-
-.project-image span {
-    position: relative;
-    z-index: 2;
-}
