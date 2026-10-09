@@ -262,9 +262,9 @@ html, body {
   }
 
   .eyebrow {
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 2px;
-    max-width: auto;
+    max-width: 100%;
     overflow-wrap: break-word;
   }
 
