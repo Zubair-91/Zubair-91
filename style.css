@@ -264,8 +264,8 @@ html, body {
   .eyebrow {
     font-size: 18px;
     letter-spacing: 2px;
-    max-width: 100%;
-    overflow-wrap: next line;
+    max-width: auto;
+    overflow-wrap: break-word;
   }
 
   .hero {
