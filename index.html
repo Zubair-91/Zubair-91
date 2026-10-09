@@ -189,10 +189,41 @@ function closeBrandGallery() {
     </div>
 
 </div>
-          <article class="project project-large">
-            <div class="project-image image-4"><span>04</span></div>
-            <div class="project-info"><h3>Social Media Post</h3><p>Promotional content • Digital ads</p></div>
-          </article>
+<div class="work-grid">
+          <article class="project project-large" onclick="openSocialMediaGallery()">
+
+  <div class="project-image image-4">
+        <span>04</span>
+    </div>
+
+      <div class="project-info">
+        <h3>Social Media Post</h3>
+        <p>Promotional content • Digital ads</p>
+    </div>
+
+</article>
+          <div id="SocialMediaGallery" class="gallery-overlay">
+
+    <div class="gallery-content">
+
+        <button class="gallery-close" onclick="closeSocialMediaGallery()">×</button>
+
+        <h2>Social Media Post</h2>
+
+        <div class="SocialMedia-gallery">
+
+            <img src="images/Social Media-01.jpg" alt="Social Media 1">
+            <img src="images/Social Media-02.jpg" alt="Social Media 2">
+            <img src="images/Social Media-03.jpg" alt="Social Media 3">
+            <img src="images/Social Media-04.jpg" alt="Social Media 4">
+            <img src="images/Social Media-05.jpg" alt="Social Media 5">
+            <img src="images/Social Media-06.jpg" alt="Social Media 6">
+
+        </div>
+
+    </div>
+
+</div>
           <article class="project">
             <div class="project-image image-5"><span>05</span></div>
             <div class="project-info"><h3>YouTube Thumbnail</h3><p>Attention-grabbing thumbnails</p></div>
@@ -264,7 +295,15 @@ function closeBrandGallery() {
     document.getElementById("OOHGallery").style.display = "none";
     document.body.style.overflow = "auto";
 }
+    function openSocialMediaGallery() {
+    document.getElementById("SocialMediaGallery").style.display = "block";
+    document.body.style.overflow = "hidden";
+}
 
+    function closeSocialMediaGallery() {
+    document.getElementById("SocialMediaGallery").style.display = "none";
+    document.body.style.overflow = "auto";
+}
   </script>
 </body>
 </html>
