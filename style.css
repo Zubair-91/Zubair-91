@@ -228,3 +228,14 @@ html, body {
     height: auto;
     display: block;
 }
+.YouTube-gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.YouTube-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
