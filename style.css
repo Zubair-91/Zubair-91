@@ -250,3 +250,31 @@ html, body {
     height: auto;
     display: block;
 }
+/* Fix hero text on mobile */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: clamp(36px, 8vw, 48px);
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .eyebrow {
+    font-size: 18px;
+    letter-spacing: 2px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .hero {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
