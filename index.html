@@ -223,10 +223,37 @@ function closeBrandGallery() {
     </div>
 
 </div>
-          <article class="project">
-            <div class="project-image image-5"><span>05</span></div>
-            <div class="project-info"><h3>YouTube Thumbnail</h3><p>Attention-grabbing thumbnails</p></div>
-          </article>
+          <article class="project" onclick="openYouTubeGallery()">
+
+  <div class="project-image image-5">
+        <span>05</span>
+    </div>
+
+      <div class="project-info">
+        <h3>YouTube Thumbnail</h3>
+        <p>Attention-grabbing Thumbnails</p>
+    </div>
+
+</article>
+          <div id="YouTubeGallery" class="gallery-overlay">
+
+    <div class="gallery-content">
+
+        <button class="gallery-close" onclick="closeYouTubeGallery()">×</button>
+
+        <h2>YouTube Thumbnail</h2>
+
+        <div class="YouTube-gallery">
+
+            <img src="images/Youtube Thumbnail-01.jpg" alt="YouTube 1">
+            <img src="images/Youtube Thumbnail-02.jpg" alt="YouTube 2">
+            <img src="images/Youtube Thumbnail-03.jpg" alt="YouTube 3">
+
+        </div>
+
+    </div>
+
+</div>
           <article class="project">
             <div class="project-image image-6"><span>06</span></div>
             <div class="project-info"><h3>Website Banner</h3><p>Web banners • Display graphics</p></div>
@@ -303,7 +330,16 @@ function closeBrandGallery() {
     document.getElementById("SocialMediaGallery").style.display = "none";
     document.body.style.overflow = "auto";
 }
-  </script>
+    function openYouTubeGallery() {
+    document.getElementById("YouTubeGallery").style.display = "block";
+    document.body.style.overflow = "hidden";
+}
+
+    function closeYouTubeGallery() {
+    document.getElementById("YouTubeGallery").style.display = "none";
+    document.body.style.overflow = "auto";
+}
+</script>
 </body>
 </html>
 
