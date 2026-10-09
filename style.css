@@ -239,3 +239,14 @@ html, body {
     height: auto;
     display: block;
 }
+.Website-gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.Website-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
