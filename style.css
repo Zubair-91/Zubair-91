@@ -250,31 +250,43 @@ html, body {
     height: auto;
     display: block;
 }
-/* Fix hero text on mobile */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: clamp(36px, 8vw, 48px);
-    line-height: 1.12;
-    letter-spacing: -1.5px;
+/* Strong mobile heading fix */
+@media screen and (max-width: 768px) {
+
+  html,
+  body {
     max-width: 100%;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
+    overflow-x: hidden;
   }
 
-  .eyebrow {
-    font-size: 14px;
-    letter-spacing: 2px;
+  .hero,
+  .hero-content,
+  .hero-text {
+    width: 100%;
     max-width: 100%;
-    overflow-wrap: break-word;
-  }
-
-  .hero {
-    max-width: 100%;
-    overflow: hidden;
-  }
-
-  .hero-content {
     min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .hero h1,
+  .hero-title,
+  .hero-content h1,
+  .hero-text h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+    font-size: clamp(30px, 7vw, 44px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -1px !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .hero h1 span,
+  .hero-title span {
+    white-space: normal !important;
     max-width: 100%;
   }
 }
