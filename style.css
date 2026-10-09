@@ -251,11 +251,11 @@ html, body {
     display: block;
 }
 /* Fix hero text on mobile */
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .hero h1 {
     font-size: clamp(36px, 8vw, 48px);
     line-height: 1.12;
-    letter-spacing: -1.5px;
+    letter-spacing: -1px;
     max-width: 100%;
     overflow-wrap: break-word;
     word-wrap: break-word;
