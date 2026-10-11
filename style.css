@@ -258,7 +258,7 @@ html, body {
     max-width: 100%;
     display: block;
     overflow: hidden;
-    margin: -100;
+    margin: 0;
     padding: 0;
 }
 
@@ -269,7 +269,7 @@ html, body {
     height: auto;
     max-width: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: left center;
     margin: 0;
 }
 
