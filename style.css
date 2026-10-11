@@ -250,46 +250,6 @@ html, body {
     height: auto;
     display: block;
 }
-/* Strong mobile heading fix */
-@media screen and (max-width: 768px) {
-
-  html,
-  body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .hero,
-  .hero-content,
-  .hero-text {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-  }
-
-  .hero h1,
-  .hero-title,
-  .hero-content h1,
-  .hero-text h1 {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    box-sizing: border-box;
-    font-size: clamp(30px, 7vw, 44px) !important;
-    line-height: 1.15 !important;
-    letter-spacing: -1px !important;
-    white-space: normal !important;
-    overflow-wrap: anywhere;
-    word-break: normal;
-  }
-
-  .hero h1 span,
-  .hero-title span {
-    white-space: normal !important;
-    max-width: 100%;
-  }
-}
 
 /* Banner container */
 .hero-card {
@@ -335,4 +295,45 @@ html, body {
         left: 12px;
         bottom: 12px;
     }
+}
+
+/* Strong mobile heading fix */
+@media screen and (max-width: 768px) {
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero,
+  .hero-content,
+  .hero-text {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .hero h1,
+  .hero-title,
+  .hero-content h1,
+  .hero-text h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+    font-size: clamp(30px, 7vw, 44px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -1px !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .hero h1 span,
+  .hero-title span {
+    white-space: normal !important;
+    max-width: 100%;
+  }
 }
