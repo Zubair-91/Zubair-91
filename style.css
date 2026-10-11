@@ -291,31 +291,40 @@ html, body {
   }
 }
 
-/* Center the banner image */
+/* Hero banner layout fix */
 .hero-card {
     position: relative;
+    width: 100%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
-/* Center the banner image itself */
+/* Center and fill the banner */
 .hero-card img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
-    margin: 0 auto;
+    margin: 0;
 }
 
-/* Place View My Work at bottom-left */
+/* Button at bottom-left of the banner */
 .hero-content {
     position: absolute;
     left: 25px;
     bottom: 25px;
     z-index: 10;
+    width: auto;
+}
+
+/* Keep only the button visible */
+.hero-content h1,
+.hero-content .eyebrow,
+.hero-content p {
+    display: none !important;
 }
 
 .hero-buttons {
@@ -324,6 +333,7 @@ html, body {
     margin: 0;
 }
 
+/* Mobile adjustment */
 @media (max-width: 768px) {
     .hero-content {
         left: 12px;
