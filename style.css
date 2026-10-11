@@ -277,7 +277,7 @@ html, body {
 .hero-content {
     position: absolute;
     left: 50px;
-    bottom: -50px;
+    bottom: -100px;
     z-index: 10;
     margin: 0;
     padding: 0;
