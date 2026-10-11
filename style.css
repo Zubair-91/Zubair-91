@@ -291,61 +291,30 @@ html, body {
   }
 }
 
-/* Creative portfolio banner */
-.hero-card {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 18px;
-}
-
-.hero-banner-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    object-position: center;
-}
-
-/* Mobile responsive banner */
-@media (max-width: 768px) {
-    .hero-card {
-        width: 100%;
-        border-radius: 12px;
-    }
-
-    .hero-banner-image {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-}
-
-.hero-content h1,
-.hero-content .eyebrow,
-.hero-content p {
-    display: none !important;
-}
-
-.hero-buttons {
-    display: flex;
-    margin-top: 20px;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
 /* Center the banner image */
 .hero-card {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
-/* Keep the View My Work button at bottom-left */
+/* Center the banner image itself */
+.hero-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
+}
+
+/* Place View My Work at bottom-left */
 .hero-content {
     position: absolute;
+    left: 25px;
     bottom: 25px;
-    left: 50px;
     z-index: 10;
 }
 
@@ -355,11 +324,9 @@ html, body {
     margin: 0;
 }
 
-/* Keep the image centered and fully visible */
-.hero-card img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: center;
-    object-position: center;
+@media (max-width: 768px) {
+    .hero-content {
+        left: 12px;
+        bottom: 12px;
+    }
 }
