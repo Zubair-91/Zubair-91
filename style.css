@@ -260,8 +260,8 @@ html, body {
 /* Keep the View My Work button at bottom-left */
 .hero-content {
     position: absolute;
-    bottom: 25px;
-    left: 25px;
+    bottom: 1px;
+    left: 1px;
     z-index: 10;
 }
 
