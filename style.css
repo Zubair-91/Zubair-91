@@ -291,49 +291,45 @@ html, body {
   }
 }
 
-/* Hero banner layout fix */
+/* Banner container */
 .hero-card {
     position: relative;
     width: 100%;
+    max-width: 100%;
+    display: block;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* Center and fill the banner */
+/* Banner image */
 .hero-card img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-width: 100%;
     object-fit: cover;
     object-position: center;
     margin: 0;
 }
 
-/* Button at bottom-left of the banner */
+/* Button over the image at bottom-left */
 .hero-content {
     position: absolute;
     left: 25px;
     bottom: 25px;
     z-index: 10;
-    width: auto;
-}
-
-/* Keep only the button visible */
-.hero-content h1,
-.hero-content .eyebrow,
-.hero-content p {
-    display: none !important;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-buttons {
     display: flex;
     justify-content: flex-start;
     margin: 0;
+    padding: 0;
 }
 
-/* Mobile adjustment */
 @media (max-width: 768px) {
     .hero-content {
         left: 12px;
