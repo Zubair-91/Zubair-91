@@ -253,12 +253,12 @@ html, body {
 
 /* Banner container */
 .hero-card {
-    position: left;
+    position: relative;
     width: 100%;
     max-width: 100%;
     display: block;
     overflow: hidden;
-    margin: 0;
+    margin: -50;
     padding: 0;
 }
 
