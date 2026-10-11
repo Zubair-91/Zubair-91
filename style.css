@@ -320,3 +320,16 @@ html, body {
         object-fit: contain;
     }
 }
+
+.hero-content h1,
+.hero-content .eyebrow,
+.hero-content p {
+    display: none !important;
+}
+
+.hero-buttons {
+    display: flex;
+    margin-top: 20px;
+    gap: 12px;
+    flex-wrap: wrap;
+}
