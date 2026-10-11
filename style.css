@@ -251,58 +251,6 @@ html, body {
     display: block;
 }
 
-/* Hero banner layout */
-.hero .hero-grid {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 0 !important;
-    position: relative;
-    width: 100%;
-}
-
-/* Banner image */
-.hero .hero-card {
-    position: relative;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden;
-}
-
-.hero .hero-card img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: center;
-}
-
-/* Button at bottom-left of banner */
-.hero .hero-content {
-    position: absolute;
-    left: 25px;
-    bottom: 25px;
-    z-index: 10;
-    margin: 0;
-    padding: 0;
-}
-
-.hero .hero-buttons {
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-}
-
-@media (max-width: 768px) {
-    .hero .hero-content {
-        left: 12px;
-        bottom: 12px;
-    }
-}
-
 /* Strong mobile heading fix */
 @media screen and (max-width: 768px) {
 
