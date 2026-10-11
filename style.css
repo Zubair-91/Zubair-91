@@ -276,8 +276,8 @@ html, body {
 /* Button over the image at bottom-left */
 .hero-content {
     position: absolute;
-    left: 25px;
-    bottom: 25px;
+    left: 1px;
+    bottom: 1px;
     z-index: 10;
     margin: 0;
     padding: 0;
