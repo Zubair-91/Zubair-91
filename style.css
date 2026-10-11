@@ -291,31 +291,3 @@ html, body {
     max-width: 100%;
   }
 }
-
-/* Remove extra space below the banner */
-.hero .hero-grid {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-    gap: 0 !important;
-}
-
-.hero .hero-card {
-    height: auto !important;
-    min-height: 0 !important;
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-    line-height: 0;
-}
-
-.hero .hero-card img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    vertical-align: bottom;
-}
-
-.hero {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-}
