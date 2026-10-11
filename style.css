@@ -333,3 +333,33 @@ html, body {
     gap: 12px;
     flex-wrap: wrap;
 }
+
+/* Center the banner image */
+.hero-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Keep the View My Work button at bottom-left */
+.hero-content {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 10;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+/* Keep the image centered and fully visible */
+.hero-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
