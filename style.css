@@ -18,11 +18,6 @@
     margin-left: -40px;
 }
 
-.hero-image {
-    transform: translateY(40px); /* down */
-}
-
-
 html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
@@ -31,7 +26,7 @@ body {
   line-height: 1.6;
 }
 a { color: inherit; text-decoration: none; }
-.container { width: min(var(--max), calc(100% - 48px)); margin: auto; }
+.container { calc(100% - 48px)); margin: auto; }
 
 .header {
   position: sticky; top: 0; z-index: 20;
