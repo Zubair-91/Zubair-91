@@ -66,10 +66,7 @@ h2 { font-size: clamp(40px, 5vw, 64px); }
 .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
 
 .hero-card {
-  aspect-ratio: 1 / 1; max-width: 440px; margin-left: auto;
-  padding: 18px; border: 1px solid #303030;
-  background: linear-gradient(145deg, #1d1d1d, #0e0e0e);
-  transform: rotate(2deg);
+  aspect-ratio: 1 / 1;
 }
 .hero-card-inner {
   height: 100%; border: 1px solid #444; display: flex;
