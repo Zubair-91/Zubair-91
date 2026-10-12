@@ -290,8 +290,8 @@ html, body {
 /* BUTTON BELOW BANNER */
 .hero-content {
     position: absolute;
-    left: 20px
-    bottom: 20px;
+    left: 0px
+    bottom: 0px;
     z-index: 10;
     width: auto;
     margin: 0;
