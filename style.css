@@ -249,10 +249,11 @@ html, body {
 
 /* FIX HERO BANNER */
 .hero {
-    min-height: auto;
+    min-height: 0;
+    height: auto;
     display: block;
     padding: 0;
-    border-bottom: 1px solid var(--line);
+    margin: 0;
 }
 
 .hero-grid {
@@ -289,9 +290,11 @@ html, body {
 /* BUTTON BELOW BANNER */
 .hero-content {
     position: absolute;
-    left: max(20px, calc((100% - 1180px) / 2));
+    left: 20px
     bottom: 20px;
     z-index: 10;
+    width: auto;
+    margin: 0;
 }
 
 .hero-buttons {
