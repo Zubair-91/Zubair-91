@@ -17,9 +17,11 @@
     display: block;
     margin-left: -40px;
 }
+
 .hero-image {
     transform: translateY(40px); /* down */
 }
+
 html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
