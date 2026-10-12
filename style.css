@@ -249,17 +249,17 @@ html, body {
 
 /* FIX HERO BANNER */
 .hero {
-    display: block;
     min-height: auto;
-    padding: 35px 0 50px;
+    display: block;
+    padding: 0;
     border-bottom: 1px solid var(--line);
 }
 
 .hero-grid {
     display: block;
-    width: min(1180px, calc(100% - 48px));
+    width: 100%;
     max-width: 100%;
-    margin: 0 auto;
+    gap: 0;
 }
 
 .hero-grid > div {
@@ -271,29 +271,27 @@ html, body {
     width: 100%;
     max-width: 100%;
     height: auto;
-    aspect-ratio: auto;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: relative;
     border: none;
     background: transparent;
-    transform: none;
 }
 
 .hero-card img {
     display: block;
     width: 100%;
     height: auto;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: center;
+    object-fit: cover;
 }
 
 /* BUTTON BELOW BANNER */
 .hero-content {
-    position: static;
-    width: min(1180px, calc(100% - 48px));
-    margin: 20px auto 0;
+    position: absolute;
+    left: max(20px, calc((100% - 1180px) / 2));
+    bottom: 20px;
+    z-index: 10;
 }
 
 .hero-buttons {
