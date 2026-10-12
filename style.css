@@ -248,7 +248,7 @@ html, body {
 }
 /* Center the banner image */
 .hero-card {
-    width: 100%;
+    width: 1920px;
     max-width: 1920px;
     height: 900px;
     margin: 0 auto;
@@ -257,7 +257,6 @@ html, body {
     border: none;
     background: transparent;
     transform: none;
-    box-sizing: border-box;
 }
 
 /* Keep the View My Work button at bottom-left */
