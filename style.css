@@ -249,18 +249,17 @@ html, body {
 
 /* FIX HERO BANNER */
 .hero {
-    min-height: 0;
-    height: auto;
-    display: block;
-    padding: 0;
-    margin: 0;
+    position: relative;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .hero-grid {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    gap: 0;
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
 }
 
 .hero-grid > div {
@@ -269,32 +268,28 @@ html, body {
 }
 
 .hero-card {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    border: none;
-    background: transparent;
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .hero-card img {
     display: block;
     width: 100%;
     height: auto;
-    object-fit: cover;
 }
 
 /* BUTTON BELOW BANNER */
 .hero-content {
-    position: absolute;
-    left: 0px
-    bottom: 0px;
+    position: absolute !important;
+    left: 20px !important;
+    bottom: 20px !important;
+    top: auto !important;
+    margin: 0 !important;
     z-index: 10;
-    width: auto;
-    margin: 0;
 }
 
 .hero-buttons {
