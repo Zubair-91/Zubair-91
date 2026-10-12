@@ -246,12 +246,33 @@ html, body {
     height: auto;
     display: block;
 }
-/* Center the banner image */
-.hero-card {
-    width: 1920px;
-    max-width: 1920px;
-    height: 900px;
+
+/* FIX HERO BANNER */
+.hero {
+    display: block;
+    min-height: auto;
+    padding: 35px 0 50px;
+    border-bottom: 1px solid var(--line);
+}
+
+.hero-grid {
+    display: block;
+    width: min(1180px, calc(100% - 48px));
+    max-width: 100%;
     margin: 0 auto;
+}
+
+.hero-grid > div {
+    width: 100%;
+    min-width: 0;
+}
+
+.hero-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    margin: 0;
     padding: 0;
     overflow: hidden;
     border: none;
@@ -259,12 +280,20 @@ html, body {
     transform: none;
 }
 
-/* Keep the View My Work button at bottom-left */
+.hero-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* BUTTON BELOW BANNER */
 .hero-content {
-    position: absolute;
-    bottom: -80px;
-    left: 30px;
-    z-index: 10;
+    position: static;
+    width: min(1180px, calc(100% - 48px));
+    margin: 20px auto 0;
 }
 
 .hero-buttons {
@@ -273,12 +302,27 @@ html, body {
     margin: 0;
 }
 
-/* Keep the image centered and fully visible */
-.hero-card img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: contain;
+/* MOBILE BANNER FIX */
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 20px 0 35px;
+    }
+
+    .hero-grid,
+    .hero-content {
+        width: calc(100% - 30px);
+    }
+
+    .hero-card,
+    .hero-card img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-card img {
+        height: auto;
+        object-fit: contain;
+    }
 }
 
 /* Strong mobile heading fix */
