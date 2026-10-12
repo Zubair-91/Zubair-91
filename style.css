@@ -280,7 +280,6 @@ html, body {
     height: 100%;
     display: block;
     object-fit: contain;
-    object-position: center;
 }
 
 /* Strong mobile heading fix */
